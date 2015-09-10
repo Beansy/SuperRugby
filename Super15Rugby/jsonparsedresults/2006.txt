@@ -1,0 +1,965 @@
+{
+    "year": 2006,
+    "weeks": [
+        {
+            "weekNumber": 1,
+            "results": [
+                {
+                    "id": 1,
+                    "TeamOne": "Team",
+                    "TeamOneScore": " Score ",
+                    "TeamTwo": "Team",
+                    "TeamTwoScore": "Score ",
+                    "MatchDate": "Date"
+                },
+                {
+                    "id": 2,
+                    "TeamOne": "Blues ",
+                    "TeamOneScore": "19",
+                    "TeamTwo": "Hurricanes",
+                    "TeamTwoScore": "37",
+                    "MatchDate": "10/2/06"
+                },
+                {
+                    "id": 3,
+                    "TeamOne": "Force ",
+                    "TeamOneScore": "10",
+                    "TeamTwo": "Brumbies",
+                    "TeamTwoScore": "25",
+                    "MatchDate": "10/2/06"
+                },
+                {
+                    "id": 4,
+                    "TeamOne": "Cheetahs",
+                    "TeamOneScore": "18",
+                    "TeamTwo": "Bulls",
+                    "TeamTwoScore": "30",
+                    "MatchDate": "10/2/06"
+                },
+                {
+                    "id": 5,
+                    "TeamOne": "Crusaders ",
+                    "TeamOneScore": "38",
+                    "TeamTwo": "Highlanders ",
+                    "TeamTwoScore": "15",
+                    "MatchDate": "11/2/06"
+                },
+                {
+                    "id": 6,
+                    "TeamOne": "Reds ",
+                    "TeamOneScore": "12",
+                    "TeamTwo": "Waratahs",
+                    "TeamTwoScore": "16",
+                    "MatchDate": "11/2/06"
+                },
+                {
+                    "id": 7,
+                    "TeamOne": "Cats ",
+                    "TeamOneScore": "12",
+                    "TeamTwo": "Stormers",
+                    "TeamTwoScore": "23",
+                    "MatchDate": "11/2/06"
+                },
+                {
+                    "id": 8,
+                    "TeamOne": "Sharks ",
+                    "TeamOneScore": "30",
+                    "TeamTwo": "Chiefs",
+                    "TeamTwoScore": "21",
+                    "MatchDate": "11/2/06"
+                }
+            ]
+        },
+        {
+            "weekNumber": 2,
+            "results": [
+                {
+                    "id": 1,
+                    "TeamOne": "Team",
+                    "TeamOneScore": " Score ",
+                    "TeamTwo": "Team",
+                    "TeamTwoScore": "Score ",
+                    "MatchDate": "Date"
+                },
+                {
+                    "id": 2,
+                    "TeamOne": "Highlanders ",
+                    "TeamOneScore": "25",
+                    "TeamTwo": "Blues",
+                    "TeamTwoScore": "13",
+                    "MatchDate": "17/2/06"
+                },
+                {
+                    "id": 3,
+                    "TeamOne": "Cats ",
+                    "TeamOneScore": "21",
+                    "TeamTwo": "Chiefs",
+                    "TeamTwoScore": "16",
+                    "MatchDate": "17/2/06"
+                },
+                {
+                    "id": 4,
+                    "TeamOne": "Bulls ",
+                    "TeamOneScore": "21",
+                    "TeamTwo": "Brumbies",
+                    "TeamTwoScore": "27",
+                    "MatchDate": "17/2/06"
+                },
+                {
+                    "id": 5,
+                    "TeamOne": "Hurricanes ",
+                    "TeamOneScore": "29",
+                    "TeamTwo": "W. Force",
+                    "TeamTwoScore": "5",
+                    "MatchDate": "18/2/06"
+                },
+                {
+                    "id": 6,
+                    "TeamOne": "Reds",
+                    "TeamOneScore": "21",
+                    "TeamTwo": "Crusaders",
+                    "TeamTwoScore": "47",
+                    "MatchDate": "18/2/06"
+                },
+                {
+                    "id": 7,
+                    "TeamOne": "Sharks ",
+                    "TeamOneScore": "26",
+                    "TeamTwo": "Cheetahs",
+                    "TeamTwoScore": "27",
+                    "MatchDate": "18/2/06"
+                },
+                {
+                    "id": 8,
+                    "TeamOne": "Stormers",
+                    "TeamOneScore": "26",
+                    "TeamTwo": "Waratahs",
+                    "TeamTwoScore": "32",
+                    "MatchDate": "18/2/06"
+                }
+            ]
+        },
+        {
+            "weekNumber": 3,
+            "results": [
+                {
+                    "id": 1,
+                    "TeamOne": "Team",
+                    "TeamOneScore": " Score ",
+                    "TeamTwo": "Team",
+                    "TeamTwoScore": "Score ",
+                    "MatchDate": "Date"
+                },
+                {
+                    "id": 2,
+                    "TeamOne": "Hurricanes",
+                    "TeamOneScore": "29",
+                    "TeamTwo": "Cats",
+                    "TeamTwoScore": "16",
+                    "MatchDate": "24/2/06"
+                },
+                {
+                    "id": 3,
+                    "TeamOne": "Force",
+                    "TeamOneScore": "9",
+                    "TeamTwo": "Chiefs",
+                    "TeamTwoScore": "26",
+                    "MatchDate": "24/2/06"
+                },
+                {
+                    "id": 4,
+                    "TeamOne": "Stormers",
+                    "TeamOneScore": "15",
+                    "TeamTwo": "Brumbies",
+                    "TeamTwoScore": "15",
+                    "MatchDate": "24/2/06"
+                },
+                {
+                    "id": 5,
+                    "TeamOne": "Crusaders",
+                    "TeamOneScore": "22",
+                    "TeamTwo": "Sharks",
+                    "TeamTwoScore": "20",
+                    "MatchDate": "25/2/06"
+                },
+                {
+                    "id": 6,
+                    "TeamOne": "Reds",
+                    "TeamOneScore": "20",
+                    "TeamTwo": "Blues",
+                    "TeamTwoScore": "21",
+                    "MatchDate": "25/2/06"
+                },
+                {
+                    "id": 7,
+                    "TeamOne": "Bulls",
+                    "TeamOneScore": "26",
+                    "TeamTwo": "Waratahs",
+                    "TeamTwoScore": "17",
+                    "MatchDate": "25/2/06"
+                },
+                {
+                    "id": 8,
+                    "TeamOne": "Cheetahs",
+                    "TeamOneScore": "12",
+                    "TeamTwo": "Highlanders",
+                    "TeamTwoScore": "17",
+                    "MatchDate": "25/2/06"
+                }
+            ]
+        },
+        {
+            "weekNumber": 4,
+            "results": [
+                {
+                    "id": 1,
+                    "TeamOne": "Team",
+                    "TeamOneScore": " Score ",
+                    "TeamTwo": "Team",
+                    "TeamTwoScore": "Score ",
+                    "MatchDate": "Date"
+                },
+                {
+                    "id": 3,
+                    "TeamOne": "Chiefs ",
+                    "TeamOneScore": "35",
+                    "TeamTwo": "Reds",
+                    "TeamTwoScore": "17",
+                    "MatchDate": "03/03/06"
+                },
+                {
+                    "id": 4,
+                    "TeamOne": "Brumbies ",
+                    "TeamOneScore": "28",
+                    "TeamTwo": "Cats",
+                    "TeamTwoScore": "7",
+                    "MatchDate": "03/03/06"
+                },
+                {
+                    "id": 5,
+                    "TeamOne": "Waratahs",
+                    "TeamOneScore": "31",
+                    "TeamTwo": "Sharks",
+                    "TeamTwoScore": "16",
+                    "MatchDate": "04/03/06"
+                },
+                {
+                    "id": 6,
+                    "TeamOne": "Crusaders",
+                    "TeamOneScore": "39",
+                    "TeamTwo": "Blues",
+                    "TeamTwoScore": "10",
+                    "MatchDate": "04/03/06"
+                },
+                {
+                    "id": 7,
+                    "TeamOne": "Stormers ",
+                    "TeamOneScore": "15",
+                    "TeamTwo": "Highlanders",
+                    "TeamTwoScore": "30",
+                    "MatchDate": "04/03/06"
+                },
+                {
+                    "id": 8,
+                    "TeamOne": "Cheetahs ",
+                    "TeamOneScore": "27",
+                    "TeamTwo": "Hurricanes",
+                    "TeamTwoScore": "25",
+                    "MatchDate": "04/03/06"
+                }
+            ]
+        },
+        {
+            "weekNumber": 5,
+            "results": [
+                {
+                    "id": 1,
+                    "TeamOne": "Team",
+                    "TeamOneScore": " Score ",
+                    "TeamTwo": "Team",
+                    "TeamTwoScore": "Score ",
+                    "MatchDate": "Date"
+                },
+                {
+                    "id": 2,
+                    "TeamOne": "Chiefs ",
+                    "TeamOneScore": "19",
+                    "TeamTwo": "Crusaders",
+                    "TeamTwoScore": "25",
+                    "MatchDate": "10/03/06"
+                },
+                {
+                    "id": 3,
+                    "TeamOne": "Waratahs",
+                    "TeamOneScore": "50",
+                    "TeamTwo": "Cats",
+                    "TeamTwoScore": "3",
+                    "MatchDate": "10/03/06"
+                },
+                {
+                    "id": 4,
+                    "TeamOne": "Brumbies ",
+                    "TeamOneScore": "35",
+                    "TeamTwo": "Sharks",
+                    "TeamTwoScore": "30",
+                    "MatchDate": "11/03/06"
+                },
+                {
+                    "id": 5,
+                    "TeamOne": "Reds",
+                    "TeamOneScore": "29",
+                    "TeamTwo": "Force",
+                    "TeamTwoScore": "18",
+                    "MatchDate": "11/03/06"
+                },
+                {
+                    "id": 6,
+                    "TeamOne": "Bulls",
+                    "TeamOneScore": "23",
+                    "TeamTwo": "Highlanders",
+                    "TeamTwoScore": "16",
+                    "MatchDate": "11/03/06"
+                },
+                {
+                    "id": 7,
+                    "TeamOne": "Stormers",
+                    "TeamOneScore": "19",
+                    "TeamTwo": "Hurricanes",
+                    "TeamTwoScore": "23",
+                    "MatchDate": "11/03/06"
+                }
+            ]
+        },
+        {
+            "weekNumber": 6,
+            "results": [
+                {
+                    "id": 1,
+                    "TeamOne": "Team",
+                    "TeamOneScore": " Score ",
+                    "TeamTwo": "Team",
+                    "TeamTwoScore": "Score ",
+                    "MatchDate": "Date"
+                },
+                {
+                    "id": 3,
+                    "TeamOne": "Crusaders ",
+                    "TeamOneScore": "43",
+                    "TeamTwo": "Cats",
+                    "TeamTwoScore": "15",
+                    "MatchDate": "17/03/06"
+                },
+                {
+                    "id": 4,
+                    "TeamOne": "Force ",
+                    "TeamOneScore": "7",
+                    "TeamTwo": "Waratahs",
+                    "TeamTwoScore": "32",
+                    "MatchDate": "17/03/06"
+                },
+                {
+                    "id": 5,
+                    "TeamOne": "Bulls",
+                    "TeamOneScore": "23",
+                    "TeamTwo": "Hurricanes",
+                    "TeamTwoScore": "26",
+                    "MatchDate": "17/03/06"
+                },
+                {
+                    "id": 6,
+                    "TeamOne": "Blues ",
+                    "TeamOneScore": "26",
+                    "TeamTwo": "Brumbies",
+                    "TeamTwoScore": "15",
+                    "MatchDate": "18/03/06"
+                },
+                {
+                    "id": 7,
+                    "TeamOne": "Highlanders ",
+                    "TeamOneScore": "11",
+                    "TeamTwo": "Sharks",
+                    "TeamTwoScore": "26",
+                    "MatchDate": "18/03/06"
+                },
+                {
+                    "id": 8,
+                    "TeamOne": "Stormers",
+                    "TeamOneScore": "25",
+                    "TeamTwo": "Cheetahs",
+                    "TeamTwoScore": "31",
+                    "MatchDate": "18/03/06"
+                }
+            ]
+        },
+        {
+            "weekNumber": 7,
+            "results": [
+                {
+                    "id": 1,
+                    "TeamOne": "Team",
+                    "TeamOneScore": " Score ",
+                    "TeamTwo": "Team",
+                    "TeamTwoScore": "Score ",
+                    "MatchDate": "Date"
+                },
+                {
+                    "id": 3,
+                    "TeamOne": "Hurricanes",
+                    "TeamOneScore": "23",
+                    "TeamTwo": "Sharks",
+                    "TeamTwoScore": "17",
+                    "MatchDate": "24/03/06"
+                },
+                {
+                    "id": 4,
+                    "TeamOne": "Waratahs",
+                    "TeamOneScore": "43",
+                    "TeamTwo": "Blues",
+                    "TeamTwoScore": "9",
+                    "MatchDate": "24/03/06"
+                },
+                {
+                    "id": 5,
+                    "TeamOne": "Cheetahs",
+                    "TeamOneScore": "10",
+                    "TeamTwo": "Reds",
+                    "TeamTwoScore": "6",
+                    "MatchDate": "24/03/06"
+                },
+                {
+                    "id": 6,
+                    "TeamOne": "Brumbies",
+                    "TeamOneScore": "28",
+                    "TeamTwo": "Chiefs",
+                    "TeamTwoScore": "26",
+                    "MatchDate": "25/03/06"
+                },
+                {
+                    "id": 7,
+                    "TeamOne": "Highlanders",
+                    "TeamOneScore": "16",
+                    "TeamTwo": "Cats",
+                    "TeamTwoScore": "14",
+                    "MatchDate": "25/03/06"
+                },
+                {
+                    "id": 8,
+                    "TeamOne": "Force",
+                    "TeamOneScore": "21",
+                    "TeamTwo": "Bulls",
+                    "TeamTwoScore": "30",
+                    "MatchDate": "25/03/06"
+                }
+            ]
+        },
+        {
+            "weekNumber": 8,
+            "results": [
+                {
+                    "id": 1,
+                    "TeamOne": "Team",
+                    "TeamOneScore": " Score ",
+                    "TeamTwo": "Team",
+                    "TeamTwoScore": "Score ",
+                    "MatchDate": "Date"
+                },
+                {
+                    "id": 3,
+                    "TeamOne": "Blues ",
+                    "TeamOneScore": "30",
+                    "TeamTwo": "Bulls",
+                    "TeamTwoScore": "17",
+                    "MatchDate": "31/03/06"
+                },
+                {
+                    "id": 4,
+                    "TeamOne": "Waratahs",
+                    "TeamOneScore": "26",
+                    "TeamTwo": "Cheetahs",
+                    "TeamTwoScore": "3",
+                    "MatchDate": "31/03/06"
+                },
+                {
+                    "id": 5,
+                    "TeamOne": "Force ",
+                    "TeamOneScore": "25",
+                    "TeamTwo": "Stormers",
+                    "TeamTwoScore": "26",
+                    "MatchDate": "31/03/06"
+                },
+                {
+                    "id": 6,
+                    "TeamOne": "Hurricanes ",
+                    "TeamOneScore": "11",
+                    "TeamTwo": "Crusaders",
+                    "TeamTwoScore": "20",
+                    "MatchDate": "1/04/06"
+                },
+                {
+                    "id": 7,
+                    "TeamOne": "Chiefs ",
+                    "TeamOneScore": "16",
+                    "TeamTwo": "Highlanders",
+                    "TeamTwoScore": "13",
+                    "MatchDate": "1/04/06"
+                },
+                {
+                    "id": 8,
+                    "TeamOne": "Sharks ",
+                    "TeamOneScore": "36",
+                    "TeamTwo": "Reds",
+                    "TeamTwoScore": "28",
+                    "MatchDate": "1/04/06"
+                }
+            ]
+        },
+        {
+            "weekNumber": 9,
+            "results": [
+                {
+                    "id": 1,
+                    "TeamOne": "Team",
+                    "TeamOneScore": " Score ",
+                    "TeamTwo": "Team",
+                    "TeamTwoScore": "Score ",
+                    "MatchDate": "Date"
+                },
+                {
+                    "id": 3,
+                    "TeamOne": "Crusaders ",
+                    "TeamOneScore": "17",
+                    "TeamTwo": "Waratahs ",
+                    "TeamTwoScore": "11",
+                    "MatchDate": "07/04/06"
+                },
+                {
+                    "id": 4,
+                    "TeamOne": "Highlanders",
+                    "TeamOneScore": "25",
+                    "TeamTwo": "Force",
+                    "TeamTwoScore": "22",
+                    "MatchDate": "08/04/06"
+                },
+                {
+                    "id": 5,
+                    "TeamOne": "Chiefs",
+                    "TeamOneScore": "26",
+                    "TeamTwo": "Bulls",
+                    "TeamTwoScore": "26",
+                    "MatchDate": "08/04/06"
+                },
+                {
+                    "id": 6,
+                    "TeamOne": "Blues ",
+                    "TeamOneScore": "32",
+                    "TeamTwo": "Stormers",
+                    "TeamTwoScore": "15",
+                    "MatchDate": "08/04/06"
+                },
+                {
+                    "id": 7,
+                    "TeamOne": "Brumbies ",
+                    "TeamOneScore": "53",
+                    "TeamTwo": "Cheetahs",
+                    "TeamTwoScore": "20",
+                    "MatchDate": "08/04/06"
+                },
+                {
+                    "id": 8,
+                    "TeamOne": "Cats ",
+                    "TeamOneScore": "16",
+                    "TeamTwo": "Reds",
+                    "TeamTwoScore": "23",
+                    "MatchDate": "08/04/06"
+                }
+            ]
+        },
+        {
+            "weekNumber": 10,
+            "results": [
+                {
+                    "id": 1,
+                    "TeamOne": "Team",
+                    "TeamOneScore": " Score ",
+                    "TeamTwo": "Team",
+                    "TeamTwoScore": "Score ",
+                    "MatchDate": "Date"
+                },
+                {
+                    "id": 3,
+                    "TeamOne": "Blues",
+                    "TeamOneScore": "39",
+                    "TeamTwo": "Force",
+                    "TeamTwoScore": "8",
+                    "MatchDate": "14/04/06"
+                },
+                {
+                    "id": 4,
+                    "TeamOne": " Crusaders",
+                    "TeamOneScore": "53",
+                    "TeamTwo": "Cheetahs ",
+                    "TeamTwoScore": "17",
+                    "MatchDate": "15/04/06"
+                },
+                {
+                    "id": 5,
+                    "TeamOne": "Chiefs",
+                    "TeamOneScore": "30",
+                    "TeamTwo": "Stormers",
+                    "TeamTwoScore": "20",
+                    "MatchDate": "15/04/06"
+                },
+                {
+                    "id": 6,
+                    "TeamOne": "Reds",
+                    "TeamOneScore": "20",
+                    "TeamTwo": "Bulls",
+                    "TeamTwoScore": "19",
+                    "MatchDate": "15/04/06"
+                },
+                {
+                    "id": 7,
+                    "TeamOne": "Cats ",
+                    "TeamOneScore": "8",
+                    "TeamTwo": "Sharks",
+                    "TeamTwoScore": "36",
+                    "MatchDate": "15/04/06"
+                },
+                {
+                    "id": 8,
+                    "TeamOne": "Highlanders",
+                    "TeamOneScore": "13",
+                    "TeamTwo": "Hurricanes",
+                    "TeamTwoScore": "29",
+                    "MatchDate": "16/04/06"
+                },
+                {
+                    "id": 9,
+                    "TeamOne": "Waratahs",
+                    "TeamOneScore": "37",
+                    "TeamTwo": "Brumbies",
+                    "TeamTwoScore": "14",
+                    "MatchDate": "16/04/06"
+                }
+            ]
+        },
+        {
+            "weekNumber": 11,
+            "results": [
+                {
+                    "id": 1,
+                    "TeamOne": "Team",
+                    "TeamOneScore": " Score ",
+                    "TeamTwo": "Team",
+                    "TeamTwoScore": "Score ",
+                    "MatchDate": "Date"
+                },
+                {
+                    "id": 3,
+                    "TeamOne": "Chiefs",
+                    "TeamOneScore": "33",
+                    "TeamTwo": "Cheetahs",
+                    "TeamTwoScore": "32",
+                    "MatchDate": "21/04/06"
+                },
+                {
+                    "id": 4,
+                    "TeamOne": "Reds ",
+                    "TeamOneScore": "20",
+                    "TeamTwo": "Stormers",
+                    "TeamTwoScore": "24",
+                    "MatchDate": "21/04/06"
+                },
+                {
+                    "id": 5,
+                    "TeamOne": "Force ",
+                    "TeamOneScore": "23",
+                    "TeamTwo": "Crusaders",
+                    "TeamTwoScore": "23",
+                    "MatchDate": "21/04/06"
+                },
+                {
+                    "id": 6,
+                    "TeamOne": "Brumbies",
+                    "TeamOneScore": "21",
+                    "TeamTwo": "Hurricanes",
+                    "TeamTwoScore": "16",
+                    "MatchDate": "22/04/06"
+                },
+                {
+                    "id": 7,
+                    "TeamOne": "Sharks ",
+                    "TeamOneScore": "32",
+                    "TeamTwo": "Blues",
+                    "TeamTwoScore": "15",
+                    "MatchDate": "22/04/06"
+                },
+                {
+                    "id": 8,
+                    "TeamOne": "Bulls",
+                    "TeamOneScore": "46",
+                    "TeamTwo": "Cats",
+                    "TeamTwoScore": "17",
+                    "MatchDate": "22/04/06"
+                }
+            ]
+        },
+        {
+            "weekNumber": 12,
+            "results": [
+                {
+                    "id": 1,
+                    "TeamOne": "Team",
+                    "TeamOneScore": " Score ",
+                    "TeamTwo": "Team",
+                    "TeamTwoScore": "Score ",
+                    "MatchDate": "Date"
+                },
+                {
+                    "id": 3,
+                    "TeamOne": "Highlanders ",
+                    "TeamOneScore": "3",
+                    "TeamTwo": "Waratahs ",
+                    "TeamTwoScore": "20",
+                    "MatchDate": "28/04/06"
+                },
+                {
+                    "id": 4,
+                    "TeamOne": "Cats",
+                    "TeamOneScore": "34",
+                    "TeamTwo": "Force",
+                    "TeamTwoScore": "34",
+                    "MatchDate": "28/04/06"
+                },
+                {
+                    "id": 5,
+                    "TeamOne": "Hurricanes ",
+                    "TeamOneScore": "35",
+                    "TeamTwo": "Chiefs",
+                    "TeamTwoScore": "10",
+                    "MatchDate": "29/04/06"
+                },
+                {
+                    "id": 6,
+                    "TeamOne": "Brumbies",
+                    "TeamOneScore": "36",
+                    "TeamTwo": "Reds",
+                    "TeamTwoScore": "0",
+                    "MatchDate": "29/04/06"
+                },
+                {
+                    "id": 7,
+                    "TeamOne": "Cheetahs ",
+                    "TeamOneScore": "33",
+                    "TeamTwo": "Blues",
+                    "TeamTwoScore": "34",
+                    "MatchDate": "29/04/06"
+                },
+                {
+                    "id": 8,
+                    "TeamOne": "Bulls ",
+                    "TeamOneScore": "34",
+                    "TeamTwo": "Sharks",
+                    "TeamTwoScore": "27",
+                    "MatchDate": "29/04/06"
+                },
+                {
+                    "id": 9,
+                    "TeamOne": "Stormers",
+                    "TeamOneScore": "27",
+                    "TeamTwo": "Crusaders",
+                    "TeamTwoScore": "18",
+                    "MatchDate": "29/04/06"
+                }
+            ]
+        },
+        {
+            "weekNumber": 13,
+            "results": [
+                {
+                    "id": 1,
+                    "TeamOne": "Team",
+                    "TeamOneScore": " Score ",
+                    "TeamTwo": "Team",
+                    "TeamTwoScore": "Score ",
+                    "MatchDate": "Date"
+                },
+                {
+                    "id": 3,
+                    "TeamOne": "Hurricanes",
+                    "TeamOneScore": "26",
+                    "TeamTwo": "Reds",
+                    "TeamTwoScore": "22",
+                    "MatchDate": "05/05/06"
+                },
+                {
+                    "id": 4,
+                    "TeamOne": "Bulls",
+                    "TeamOneScore": "17",
+                    "TeamTwo": "Crusaders",
+                    "TeamTwoScore": "35",
+                    "MatchDate": "05/05/06"
+                },
+                {
+                    "id": 5,
+                    "TeamOne": "Chiefs ",
+                    "TeamOneScore": "37",
+                    "TeamTwo": "Waratahs",
+                    "TeamTwoScore": "33",
+                    "MatchDate": "06/05/06"
+                },
+                {
+                    "id": 6,
+                    "TeamOne": "Brumbies ",
+                    "TeamOneScore": "26",
+                    "TeamTwo": "Highlanders",
+                    "TeamTwoScore": "28",
+                    "MatchDate": "06/05/06"
+                },
+                {
+                    "id": 7,
+                    "TeamOne": "Cheetahs ",
+                    "TeamOneScore": "14",
+                    "TeamTwo": "Force",
+                    "TeamTwoScore": "16",
+                    "MatchDate": "06/05/06"
+                },
+                {
+                    "id": 8,
+                    "TeamOne": "Sharks ",
+                    "TeamOneScore": "24",
+                    "TeamTwo": "Stormers",
+                    "TeamTwoScore": "17",
+                    "MatchDate": "06/05/06"
+                },
+                {
+                    "id": 9,
+                    "TeamOne": "Cats ",
+                    "TeamOneScore": "34",
+                    "TeamTwo": "Blues",
+                    "TeamTwoScore": "33",
+                    "MatchDate": "06/05/06"
+                }
+            ]
+        },
+        {
+            "weekNumber": 14,
+            "results": [
+                {
+                    "id": 1,
+                    "TeamOne": "Team",
+                    "TeamOneScore": " Score ",
+                    "TeamTwo": "Team",
+                    "TeamTwoScore": "Score ",
+                    "MatchDate": "Date"
+                },
+                {
+                    "id": 3,
+                    "TeamOne": "Crusaders",
+                    "TeamOneScore": "33",
+                    "TeamTwo": "Brumbies",
+                    "TeamTwoScore": "3",
+                    "MatchDate": "12/05/06"
+                },
+                {
+                    "id": 4,
+                    "TeamOne": "Reds",
+                    "TeamOneScore": "22",
+                    "TeamTwo": "Highlanders",
+                    "TeamTwoScore": "16",
+                    "MatchDate": "12/05/06"
+                },
+                {
+                    "id": 5,
+                    "TeamOne": "Sharks ",
+                    "TeamOneScore": "41",
+                    "TeamTwo": "Force",
+                    "TeamTwoScore": "25",
+                    "MatchDate": "12/05/06"
+                },
+                {
+                    "id": 6,
+                    "TeamOne": "Blues",
+                    "TeamOneScore": "9",
+                    "TeamTwo": "Chiefs",
+                    "TeamTwoScore": "30",
+                    "MatchDate": "13/05/06"
+                },
+                {
+                    "id": 7,
+                    "TeamOne": "Waratahs ",
+                    "TeamOneScore": "14",
+                    "TeamTwo": "Hurricanes",
+                    "TeamTwoScore": "19",
+                    "MatchDate": "13/05/06"
+                },
+                {
+                    "id": 8,
+                    "TeamOne": "Cheetahs",
+                    "TeamOneScore": "28",
+                    "TeamTwo": "Cats",
+                    "TeamTwoScore": "23",
+                    "MatchDate": "13/05/06"
+                },
+                {
+                    "id": 9,
+                    "TeamOne": "Stormers",
+                    "TeamOneScore": "10",
+                    "TeamTwo": "Bulls",
+                    "TeamTwoScore": "43",
+                    "MatchDate": "13/05/06"
+                }
+            ]
+        },
+        {
+            "weekNumber": 15,
+            "results": [
+                {
+                    "id": 1,
+                    "TeamOne": "Team",
+                    "TeamOneScore": " Score ",
+                    "TeamTwo": "Team",
+                    "TeamTwoScore": "Score ",
+                    "MatchDate": "Date"
+                },
+                {
+                    "id": 3,
+                    "TeamOne": "Hurricanes",
+                    "TeamOneScore": "16",
+                    "TeamTwo": "Waratahs",
+                    "TeamTwoScore": "14",
+                    "MatchDate": "19/05/06"
+                },
+                {
+                    "id": 4,
+                    "TeamOne": "Crusaders",
+                    "TeamOneScore": "35",
+                    "TeamTwo": "Bulls",
+                    "TeamTwoScore": "15",
+                    "MatchDate": "20/05/06"
+                }
+            ]
+        },
+        {
+            "weekNumber": 16,
+            "results": [
+                {
+                    "id": 1,
+                    "TeamOne": "Team",
+                    "TeamOneScore": " Score ",
+                    "TeamTwo": "Team",
+                    "TeamTwoScore": "Score ",
+                    "MatchDate": "Date"
+                },
+                {
+                    "id": 3,
+                    "TeamOne": "Crusaders",
+                    "TeamOneScore": "19",
+                    "TeamTwo": "Hurricanes",
+                    "TeamTwoScore": "12",
+                    "MatchDate": "27/05/06"
+                }
+            ]
+        }
+    ]
+}

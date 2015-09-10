@@ -1,0 +1,36 @@
+﻿@model Super15Rugby.Models.ViewModels.ResultsViewModel
+
+@{
+    ViewBag.Title = "Index";
+}
+    @foreach (var year in Model.years)
+    {
+        <h1>Year: @year.year</h1>
+        
+        foreach (var week in year.weeks)
+        {
+            <h2>Week: @week.weekNumber</h2>
+    <table class="table table-bordered">
+        <tr>
+            <th>Home Team</th>
+            <th>Score</th>
+            <th>Away Team</th>
+            <th>Score</th>
+            <th>Match Date</th>
+        </tr>
+        @foreach (var result in week.results)
+        {
+            <tr>
+                <td>@result.TeamOne</td>
+                <td>@result.TeamOneScore</td>
+                <td>@result.TeamTwo</td>
+                <td>@result.TeamTwoScore</td>
+                <td>@result.MatchDate</td>
+            </tr>
+        }
+    </table>
+        }
+
+    }
+
+        

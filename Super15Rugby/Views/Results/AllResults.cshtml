@@ -1,0 +1,87 @@
+﻿@model Super15Rugby.Models.ViewModels.ResultsViewModel
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<link rel="stylesheet" href="~/Scripts/tablesorter-master/css/theme.blue.css">
+
+Year: 
+<div class="btn-group-lg" role="group" aria-label="...">
+    @foreach (var year in Model.years)
+    {
+        <button type="button" class="yearSelector btn btn-default">@year.year</button>
+    }
+</div>
+
+<div style="clear:both"></div>
+Week:
+<div class="btn-group-sm" role="group" aria-label="...">
+    @foreach (var week in Model.years[0].weeks)
+    {
+        <button type="button" class="btn btn-default">@week.weekNumber</button>
+    }
+</div>
+
+<table id="myTable" class="tablesorter">
+    <thead>
+        <tr>
+            <th class="filter-select">Home Team</th>
+            <th>Score</th>
+            <th class="filter-select">Away Team</th>
+            <th>Score</th>
+            <th>Match Date</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var year in Model.years)
+        {
+
+            foreach (var week in year.weeks)
+            {
+
+                foreach (var result in week.results)
+                {
+                    <tr>
+                        <td>@result.TeamOne</td>
+                        <td>@result.TeamOneScore</td>
+                        <td>@result.TeamTwo</td>
+                        <td>@result.TeamTwoScore</td>
+                        <td>@result.MatchDate</td>
+                    </tr>
+                }
+
+            }
+
+        }
+    </tbody>
+</table>
+<script type="text/javascript" src="~/Scripts/jquery-1.10.2.min.js"></script>
+<script type="text/javascript" src="~/Scripts/tablesorter-master/js/jquery.tablesorter.js"></script>
+<script type="text/javascript" src="~/Scripts/tablesorter-master/js/jquery.tablesorter.widgets.js" ></script> 
+<script>
+    $(document).ready(function () {
+        $("#myTable").tablesorter({
+            theme: 'blue',
+            widgets: ["zebra", "filter"]
+        });
+        
+        $('.yearSelector').each(function () {
+            if (this.innerHTML == '2006') {
+                $(this).addClass('active');
+            }
+        });
+
+        function setYearSelectorActive() {
+            $('.yearSelector').removeClass('active');
+            $('.yearSelector').removeAttr('checked');
+            $(this).attr('checked', 'checked');
+            $(this).addClass('active');
+        }
+
+        $('.yearSelector').click(setYearSelectorActive);
+
+    }
+
+);
+</script>

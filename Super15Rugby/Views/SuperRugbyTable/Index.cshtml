@@ -1,0 +1,52 @@
+﻿@model Super15Rugby.Models.Table
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Super 15 Table</h2>
+
+<table class="table table-bordered">
+    @{var position = 1;}
+    <tr>
+        <th>Position</th>
+        <th>Team</th>
+        <th>Conference</th>
+        <th>Played</th>
+        <th>Won</th>
+        <th>Loss</th>
+        <th>Drawn</th>
+        <th>Points For</th>
+        <th>Points Against</th>
+        <th>Points Differential</th>
+        <th>Bonus Points</th>
+        <th>Total Points</th>
+    </tr>
+    @foreach (var t in Model.Teams)
+    {
+        var backGroundColour = "info";
+        if (position <= 3)
+        {
+            backGroundColour = "success";
+        }
+        else if (position <= 6)
+        {
+            backGroundColour = "danger";
+        }
+        <tr class="@backGroundColour">
+            <td>@position</td>
+            <td>@t.TeamName</td>
+            <td>@t.ConferenceName</td>
+            <td>@t.Played</td>
+            <td>@t.Wins</td>
+            <td>@t.Losses</td>
+            <td>@t.Draws</td>
+            <td>@t.PointsFor</td>
+            <td>@t.PointsAgainst</td>
+            <td>@t.PointsDifferential</td>
+            <td>@t.BonusPoints</td>
+            <td>@t.TablePoints</td>
+        </tr>
+
+        position++;
+    }
+</table>

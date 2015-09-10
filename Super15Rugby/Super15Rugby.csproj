@@ -1,0 +1,926 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{B6BE4E4A-D666-4823-ADBD-DC2875D74F2F}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Super15Rugby</RootNamespace>
+    <AssemblyName>Super15Rugby</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <MvcBuildViews>false</MvcBuildViews>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Dapper">
+      <HintPath>..\packages\Dapper.1.42\lib\net45\Dapper.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServerCompact">
+      <HintPath>..\packages\EntityFramework.SqlServerCompact.6.1.3\lib\net45\EntityFramework.SqlServerCompact.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.SqlServerCe, Version=4.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.SqlServer.Compact.4.0.8876.1\lib\net40\System.Data.SqlServerCe.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Abstractions" />
+    <Reference Include="System.Web.Routing" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http">
+    </Reference>
+    <Reference Include="System.Net.Http.WebRequest">
+    </Reference>
+    <Reference Include="System.Web.Helpers, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.2\lib\net45\System.Web.Helpers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Mvc, Version=__MvcPagesVersion__, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.Mvc.5.2.2\lib\net45\System.Web.Mvc.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Optimization">
+      <HintPath>..\packages\Microsoft.AspNet.Web.Optimization.1.1.3\lib\net40\System.Web.Optimization.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.Razor.3.2.2\lib\net45\System.Web.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.2\lib\net45\System.Web.WebPages.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Deployment, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.2\lib\net45\System.Web.WebPages.Deployment.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.2\lib\net45\System.Web.WebPages.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="WebGrease">
+      <Private>True</Private>
+      <HintPath>..\packages\WebGrease.1.5.2\lib\WebGrease.dll</HintPath>
+    </Reference>
+    <Reference Include="Antlr3.Runtime">
+      <Private>True</Private>
+      <HintPath>..\packages\Antlr.3.4.1.9004\lib\Antlr3.Runtime.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\packages\Newtonsoft.Json.6.0.4\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App_Start\BundleConfig.cs" />
+    <Compile Include="App_Start\FilterConfig.cs" />
+    <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\ResultsController.cs" />
+    <Compile Include="Controllers\SuperRugbyTableController.cs" />
+    <Compile Include="DataLayer\ResultsDataLayer.cs" />
+    <Compile Include="DataLayer\SuperRugbyTableDataLayer.cs" />
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Result.cs" />
+    <Compile Include="Models\Table.cs" />
+    <Compile Include="Models\Team.cs" />
+    <Compile Include="Models\ViewModels\ResultsViewModel.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Content\bootstrap.css" />
+    <Content Include="Content\bootstrap.min.css" />
+    <Content Include="favicon.ico" />
+    <Content Include="fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="Global.asax" />
+    <Content Include="Content\Site.css" />
+    <Content Include="jsonparsedresults\2006.txt" />
+    <Content Include="jsonparsedresults\2007.txt" />
+    <Content Include="jsonparsedresults\2008.txt" />
+    <Content Include="jsonparsedresults\2009.txt" />
+    <Content Include="jsonparsedresults\2010.txt" />
+    <Content Include="jsonparsedresults\2011.txt" />
+    <Content Include="jsonparsedresults\2012.txt" />
+    <Content Include="jsonparsedresults\2013.txt" />
+    <Content Include="jsonparsedresults\2014.txt" />
+    <Content Include="jsonparsedresults\2015.txt" />
+    <Content Include="Scripts\addons\pager\jquery.tablesorter.pager.css" />
+    <Content Include="Scripts\addons\pager\jquery.tablesorter.pager.js" />
+    <Content Include="Scripts\bootstrap.js" />
+    <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="Scripts\build.xml" />
+    <Content Include="Scripts\build\js.jar" />
+    <Content Include="Scripts\build\jsmin.js" />
+    <Content Include="Scripts\build\min.js" />
+    <Content Include="Scripts\build\pack.js" />
+    <Content Include="Scripts\build\packer.js" />
+    <Content Include="Scripts\build\ParseMaster.js" />
+    <Content Include="Scripts\build\writeFile.js" />
+    <Content Include="Scripts\docs\assets\ajax-content.html" />
+    <Content Include="Scripts\docs\css\jq.css" />
+    <Content Include="Scripts\docs\example-ajax.html" />
+    <Content Include="Scripts\docs\example-empty-table.html" />
+    <Content Include="Scripts\docs\example-extending-defaults.html" />
+    <Content Include="Scripts\docs\example-meta-headers.html" />
+    <Content Include="Scripts\docs\example-meta-parsers.html" />
+    <Content Include="Scripts\docs\example-meta-sort-list.html" />
+    <Content Include="Scripts\docs\example-option-debug.html" />
+    <Content Include="Scripts\docs\example-option-digits.html" />
+    <Content Include="Scripts\docs\example-option-sort-force.html" />
+    <Content Include="Scripts\docs\example-option-sort-key.html" />
+    <Content Include="Scripts\docs\example-option-sort-list.html" />
+    <Content Include="Scripts\docs\example-option-sort-order.html" />
+    <Content Include="Scripts\docs\example-option-text-extraction.html" />
+    <Content Include="Scripts\docs\example-options-headers.html" />
+    <Content Include="Scripts\docs\example-pager.html" />
+    <Content Include="Scripts\docs\example-parsers.html" />
+    <Content Include="Scripts\docs\example-trigger-sort.html" />
+    <Content Include="Scripts\docs\example-triggers.html" />
+    <Content Include="Scripts\docs\example-update-cell.html" />
+    <Content Include="Scripts\docs\example-widgets.html" />
+    <Content Include="Scripts\docs\img\external.png" />
+    <Content Include="Scripts\docs\index.html" />
+    <Content Include="Scripts\docs\js\docs.js" />
+    <Content Include="Scripts\docs\js\examples.js" />
+    <Content Include="Scripts\jquery-latest.js" />
+    <Content Include="Scripts\jquery.metadata.js" />
+    <Content Include="Scripts\jquery.tablesorter.js" />
+    <Content Include="Scripts\jquery.tablesorter.min.js" />
+    <Content Include="Scripts\jquery.tablesorter.widget.js" />
+    <Content Include="Scripts\SuperRugbyJsonParser.js" />
+    <Content Include="Scripts\tablesorter-master\addons\pager\icons\first.png" />
+    <Content Include="Scripts\tablesorter-master\addons\pager\icons\last.png" />
+    <Content Include="Scripts\tablesorter-master\addons\pager\icons\loading.gif" />
+    <Content Include="Scripts\tablesorter-master\addons\pager\icons\next.png" />
+    <Content Include="Scripts\tablesorter-master\addons\pager\icons\prev.png" />
+    <Content Include="Scripts\tablesorter-master\addons\pager\jquery.tablesorter.pager.css" />
+    <Content Include="Scripts\tablesorter-master\addons\pager\jquery.tablesorter.pager.js" />
+    <Content Include="Scripts\tablesorter-master\beta-testing\example-pager-custom-controls.html" />
+    <Content Include="Scripts\tablesorter-master\beta-testing\example-widget-column-reorder.html" />
+    <Content Include="Scripts\tablesorter-master\beta-testing\pager-custom-controls.js" />
+    <Content Include="Scripts\tablesorter-master\beta-testing\widget-reorder.js" />
+    <Content Include="Scripts\tablesorter-master\changelog.txt" />
+    <Content Include="Scripts\tablesorter-master\css\dragtable.mod.css" />
+    <Content Include="Scripts\tablesorter-master\css\filter.formatter.css" />
+    <Content Include="Scripts\tablesorter-master\css\images\black-asc.gif" />
+    <Content Include="Scripts\tablesorter-master\css\images\black-desc.gif" />
+    <Content Include="Scripts\tablesorter-master\css\images\black-unsorted.gif" />
+    <Content Include="Scripts\tablesorter-master\css\images\bootstrap-black-unsorted.png" />
+    <Content Include="Scripts\tablesorter-master\css\images\bootstrap-white-unsorted.png" />
+    <Content Include="Scripts\tablesorter-master\css\images\dragtable-handle.png" />
+    <Content Include="Scripts\tablesorter-master\css\images\dragtable-handle.svg" />
+    <Content Include="Scripts\tablesorter-master\css\images\dropbox-asc-hovered.png" />
+    <Content Include="Scripts\tablesorter-master\css\images\dropbox-asc.png" />
+    <Content Include="Scripts\tablesorter-master\css\images\dropbox-desc-hovered.png" />
+    <Content Include="Scripts\tablesorter-master\css\images\dropbox-desc.png" />
+    <Content Include="Scripts\tablesorter-master\css\images\green-asc.gif" />
+    <Content Include="Scripts\tablesorter-master\css\images\green-desc.gif" />
+    <Content Include="Scripts\tablesorter-master\css\images\green-header.gif" />
+    <Content Include="Scripts\tablesorter-master\css\images\green-unsorted.gif" />
+    <Content Include="Scripts\tablesorter-master\css\images\ice-asc.gif" />
+    <Content Include="Scripts\tablesorter-master\css\images\ice-desc.gif" />
+    <Content Include="Scripts\tablesorter-master\css\images\ice-unsorted.gif" />
+    <Content Include="Scripts\tablesorter-master\css\images\metro-black-asc.png" />
+    <Content Include="Scripts\tablesorter-master\css\images\metro-black-desc.png" />
+    <Content Include="Scripts\tablesorter-master\css\images\metro-loading.gif" />
+    <Content Include="Scripts\tablesorter-master\css\images\metro-unsorted.png" />
+    <Content Include="Scripts\tablesorter-master\css\images\metro-white-asc.png" />
+    <Content Include="Scripts\tablesorter-master\css\images\metro-white-desc.png" />
+    <Content Include="Scripts\tablesorter-master\css\images\white-asc.gif" />
+    <Content Include="Scripts\tablesorter-master\css\images\white-desc.gif" />
+    <Content Include="Scripts\tablesorter-master\css\images\white-unsorted.gif" />
+    <Content Include="Scripts\tablesorter-master\css\theme.black-ice.css" />
+    <Content Include="Scripts\tablesorter-master\css\theme.blue.css" />
+    <Content Include="Scripts\tablesorter-master\css\theme.bootstrap.css" />
+    <Content Include="Scripts\tablesorter-master\css\theme.bootstrap_2.css" />
+    <Content Include="Scripts\tablesorter-master\css\theme.dark.css" />
+    <Content Include="Scripts\tablesorter-master\css\theme.default.css" />
+    <Content Include="Scripts\tablesorter-master\css\theme.dropbox.css" />
+    <Content Include="Scripts\tablesorter-master\css\theme.green.css" />
+    <Content Include="Scripts\tablesorter-master\css\theme.grey.css" />
+    <Content Include="Scripts\tablesorter-master\css\theme.ice.css" />
+    <Content Include="Scripts\tablesorter-master\css\theme.jui.css" />
+    <Content Include="Scripts\tablesorter-master\css\theme.metro-dark.css" />
+    <Content Include="Scripts\tablesorter-master\dist\css\dragtable.mod.min.css" />
+    <Content Include="Scripts\tablesorter-master\dist\css\filter.formatter.min.css" />
+    <Content Include="Scripts\tablesorter-master\dist\css\images\black-asc.gif" />
+    <Content Include="Scripts\tablesorter-master\dist\css\images\black-desc.gif" />
+    <Content Include="Scripts\tablesorter-master\dist\css\images\black-unsorted.gif" />
+    <Content Include="Scripts\tablesorter-master\dist\css\images\bootstrap-black-unsorted.png" />
+    <Content Include="Scripts\tablesorter-master\dist\css\images\bootstrap-white-unsorted.png" />
+    <Content Include="Scripts\tablesorter-master\dist\css\images\dragtable-handle.png" />
+    <Content Include="Scripts\tablesorter-master\dist\css\images\dragtable-handle.svg" />
+    <Content Include="Scripts\tablesorter-master\dist\css\images\dropbox-asc-hovered.png" />
+    <Content Include="Scripts\tablesorter-master\dist\css\images\dropbox-asc.png" />
+    <Content Include="Scripts\tablesorter-master\dist\css\images\dropbox-desc-hovered.png" />
+    <Content Include="Scripts\tablesorter-master\dist\css\images\dropbox-desc.png" />
+    <Content Include="Scripts\tablesorter-master\dist\css\images\first.png" />
+    <Content Include="Scripts\tablesorter-master\dist\css\images\green-asc.gif" />
+    <Content Include="Scripts\tablesorter-master\dist\css\images\green-desc.gif" />
+    <Content Include="Scripts\tablesorter-master\dist\css\images\green-header.gif" />
+    <Content Include="Scripts\tablesorter-master\dist\css\images\green-unsorted.gif" />
+    <Content Include="Scripts\tablesorter-master\dist\css\images\ice-asc.gif" />
+    <Content Include="Scripts\tablesorter-master\dist\css\images\ice-desc.gif" />
+    <Content Include="Scripts\tablesorter-master\dist\css\images\ice-unsorted.gif" />
+    <Content Include="Scripts\tablesorter-master\dist\css\images\last.png" />
+    <Content Include="Scripts\tablesorter-master\dist\css\images\loading.gif" />
+    <Content Include="Scripts\tablesorter-master\dist\css\images\metro-black-asc.png" />
+    <Content Include="Scripts\tablesorter-master\dist\css\images\metro-black-desc.png" />
+    <Content Include="Scripts\tablesorter-master\dist\css\images\metro-loading.gif" />
+    <Content Include="Scripts\tablesorter-master\dist\css\images\metro-unsorted.png" />
+    <Content Include="Scripts\tablesorter-master\dist\css\images\metro-white-asc.png" />
+    <Content Include="Scripts\tablesorter-master\dist\css\images\metro-white-desc.png" />
+    <Content Include="Scripts\tablesorter-master\dist\css\images\next.png" />
+    <Content Include="Scripts\tablesorter-master\dist\css\images\prev.png" />
+    <Content Include="Scripts\tablesorter-master\dist\css\images\white-asc.gif" />
+    <Content Include="Scripts\tablesorter-master\dist\css\images\white-desc.gif" />
+    <Content Include="Scripts\tablesorter-master\dist\css\images\white-unsorted.gif" />
+    <Content Include="Scripts\tablesorter-master\dist\css\jquery.tablesorter.pager.min.css" />
+    <Content Include="Scripts\tablesorter-master\dist\css\theme.blackice.min.css" />
+    <Content Include="Scripts\tablesorter-master\dist\css\theme.blue.min.css" />
+    <Content Include="Scripts\tablesorter-master\dist\css\theme.bootstrap.min.css" />
+    <Content Include="Scripts\tablesorter-master\dist\css\theme.bootstrap_2.min.css" />
+    <Content Include="Scripts\tablesorter-master\dist\css\theme.dark.min.css" />
+    <Content Include="Scripts\tablesorter-master\dist\css\theme.default.min.css" />
+    <Content Include="Scripts\tablesorter-master\dist\css\theme.dropbox.min.css" />
+    <Content Include="Scripts\tablesorter-master\dist\css\theme.green.min.css" />
+    <Content Include="Scripts\tablesorter-master\dist\css\theme.grey.min.css" />
+    <Content Include="Scripts\tablesorter-master\dist\css\theme.ice.min.css" />
+    <Content Include="Scripts\tablesorter-master\dist\css\theme.jui.min.css" />
+    <Content Include="Scripts\tablesorter-master\dist\css\theme.metro-dark.min.css" />
+    <Content Include="Scripts\tablesorter-master\dist\js\extras\jquery.dragtable.mod.min.js" />
+    <Content Include="Scripts\tablesorter-master\dist\js\extras\jquery.metadata.min.js" />
+    <Content Include="Scripts\tablesorter-master\dist\js\extras\jquery.tablesorter.pager.min.js" />
+    <Content Include="Scripts\tablesorter-master\dist\js\extras\semver-mod.min.js" />
+    <Content Include="Scripts\tablesorter-master\dist\js\jquery.tablesorter.combined.js" />
+    <Content Include="Scripts\tablesorter-master\dist\js\jquery.tablesorter.combined.min.js" />
+    <Content Include="Scripts\tablesorter-master\dist\js\jquery.tablesorter.js" />
+    <Content Include="Scripts\tablesorter-master\dist\js\jquery.tablesorter.min.js" />
+    <Content Include="Scripts\tablesorter-master\dist\js\jquery.tablesorter.widgets.js" />
+    <Content Include="Scripts\tablesorter-master\dist\js\jquery.tablesorter.widgets.min.js" />
+    <Content Include="Scripts\tablesorter-master\dist\js\parsers\parser-date-extract.min.js" />
+    <Content Include="Scripts\tablesorter-master\dist\js\parsers\parser-date-iso8601.min.js" />
+    <Content Include="Scripts\tablesorter-master\dist\js\parsers\parser-date-month.min.js" />
+    <Content Include="Scripts\tablesorter-master\dist\js\parsers\parser-date-range.min.js" />
+    <Content Include="Scripts\tablesorter-master\dist\js\parsers\parser-date-two-digit-year.min.js" />
+    <Content Include="Scripts\tablesorter-master\dist\js\parsers\parser-date-weekday.min.js" />
+    <Content Include="Scripts\tablesorter-master\dist\js\parsers\parser-date.min.js" />
+    <Content Include="Scripts\tablesorter-master\dist\js\parsers\parser-duration.min.js" />
+    <Content Include="Scripts\tablesorter-master\dist\js\parsers\parser-feet-inch-fraction.min.js" />
+    <Content Include="Scripts\tablesorter-master\dist\js\parsers\parser-file-type.min.js" />
+    <Content Include="Scripts\tablesorter-master\dist\js\parsers\parser-globalize.min.js" />
+    <Content Include="Scripts\tablesorter-master\dist\js\parsers\parser-ignore-articles.min.js" />
+    <Content Include="Scripts\tablesorter-master\dist\js\parsers\parser-image.min.js" />
+    <Content Include="Scripts\tablesorter-master\dist\js\parsers\parser-input-select.min.js" />
+    <Content Include="Scripts\tablesorter-master\dist\js\parsers\parser-metric.min.js" />
+    <Content Include="Scripts\tablesorter-master\dist\js\parsers\parser-named-numbers.min.js" />
+    <Content Include="Scripts\tablesorter-master\dist\js\parsers\parser-network.min.js" />
+    <Content Include="Scripts\tablesorter-master\dist\js\parsers\parser-roman.min.js" />
+    <Content Include="Scripts\tablesorter-master\dist\js\widgets\widget-alignChar.min.js" />
+    <Content Include="Scripts\tablesorter-master\dist\js\widgets\widget-build-table.min.js" />
+    <Content Include="Scripts\tablesorter-master\dist\js\widgets\widget-chart.min.js" />
+    <Content Include="Scripts\tablesorter-master\dist\js\widgets\widget-columns.min.js" />
+    <Content Include="Scripts\tablesorter-master\dist\js\widgets\widget-columnSelector.min.js" />
+    <Content Include="Scripts\tablesorter-master\dist\js\widgets\widget-cssStickyHeaders.min.js" />
+    <Content Include="Scripts\tablesorter-master\dist\js\widgets\widget-editable.min.js" />
+    <Content Include="Scripts\tablesorter-master\dist\js\widgets\widget-filter-formatter-html5.min.js" />
+    <Content Include="Scripts\tablesorter-master\dist\js\widgets\widget-filter-formatter-jui.min.js" />
+    <Content Include="Scripts\tablesorter-master\dist\js\widgets\widget-filter-formatter-select2.min.js" />
+    <Content Include="Scripts\tablesorter-master\dist\js\widgets\widget-filter-type-insideRange.min.js" />
+    <Content Include="Scripts\tablesorter-master\dist\js\widgets\widget-filter.min.js" />
+    <Content Include="Scripts\tablesorter-master\dist\js\widgets\widget-formatter.min.js" />
+    <Content Include="Scripts\tablesorter-master\dist\js\widgets\widget-grouping.min.js" />
+    <Content Include="Scripts\tablesorter-master\dist\js\widgets\widget-headerTitles.min.js" />
+    <Content Include="Scripts\tablesorter-master\dist\js\widgets\widget-math.min.js" />
+    <Content Include="Scripts\tablesorter-master\dist\js\widgets\widget-output.min.js" />
+    <Content Include="Scripts\tablesorter-master\dist\js\widgets\widget-pager.min.js" />
+    <Content Include="Scripts\tablesorter-master\dist\js\widgets\widget-print.min.js" />
+    <Content Include="Scripts\tablesorter-master\dist\js\widgets\widget-reflow.min.js" />
+    <Content Include="Scripts\tablesorter-master\dist\js\widgets\widget-repeatheaders.min.js" />
+    <Content Include="Scripts\tablesorter-master\dist\js\widgets\widget-resizable.min.js" />
+    <Content Include="Scripts\tablesorter-master\dist\js\widgets\widget-saveSort.min.js" />
+    <Content Include="Scripts\tablesorter-master\dist\js\widgets\widget-scroller.min.js" />
+    <Content Include="Scripts\tablesorter-master\dist\js\widgets\widget-sort2Hash.min.js" />
+    <Content Include="Scripts\tablesorter-master\dist\js\widgets\widget-sortTbodies.min.js" />
+    <Content Include="Scripts\tablesorter-master\dist\js\widgets\widget-staticRow.min.js" />
+    <Content Include="Scripts\tablesorter-master\dist\js\widgets\widget-stickyHeaders.min.js" />
+    <Content Include="Scripts\tablesorter-master\dist\js\widgets\widget-storage.min.js" />
+    <Content Include="Scripts\tablesorter-master\dist\js\widgets\widget-uitheme.min.js" />
+    <Content Include="Scripts\tablesorter-master\docs\assets\ajax-content.html" />
+    <Content Include="Scripts\tablesorter-master\docs\assets\build.txt" />
+    <Content Include="Scripts\tablesorter-master\docs\css\bootstrap-v2.min.css" />
+    <Content Include="Scripts\tablesorter-master\docs\css\bootstrap.min.css" />
+    <Content Include="Scripts\tablesorter-master\docs\css\images\glyphicons-halflings-white.png" />
+    <Content Include="Scripts\tablesorter-master\docs\css\images\glyphicons-halflings.png" />
+    <Content Include="Scripts\tablesorter-master\docs\css\images\ui-bg_diagonals-thick_90_eeeeee_40x40.png" />
+    <Content Include="Scripts\tablesorter-master\docs\css\images\ui-bg_flat_15_cd0a0a_40x100.png" />
+    <Content Include="Scripts\tablesorter-master\docs\css\images\ui-bg_glass_100_e4f1fb_1x400.png" />
+    <Content Include="Scripts\tablesorter-master\docs\css\images\ui-bg_glass_50_3baae3_1x400.png" />
+    <Content Include="Scripts\tablesorter-master\docs\css\images\ui-bg_glass_80_d7ebf9_1x400.png" />
+    <Content Include="Scripts\tablesorter-master\docs\css\images\ui-bg_highlight-hard_100_f2f5f7_1x100.png" />
+    <Content Include="Scripts\tablesorter-master\docs\css\images\ui-bg_highlight-hard_70_000000_1x100.png" />
+    <Content Include="Scripts\tablesorter-master\docs\css\images\ui-bg_highlight-soft_100_deedf7_1x100.png" />
+    <Content Include="Scripts\tablesorter-master\docs\css\images\ui-bg_highlight-soft_25_ffef8f_1x100.png" />
+    <Content Include="Scripts\tablesorter-master\docs\css\images\ui-icons_2694e8_256x240.png" />
+    <Content Include="Scripts\tablesorter-master\docs\css\images\ui-icons_2e83ff_256x240.png" />
+    <Content Include="Scripts\tablesorter-master\docs\css\images\ui-icons_3d80b3_256x240.png" />
+    <Content Include="Scripts\tablesorter-master\docs\css\images\ui-icons_72a7cf_256x240.png" />
+    <Content Include="Scripts\tablesorter-master\docs\css\images\ui-icons_ffffff_256x240.png" />
+    <Content Include="Scripts\tablesorter-master\docs\css\jq.css" />
+    <Content Include="Scripts\tablesorter-master\docs\css\jquery-ui.min.css" />
+    <Content Include="Scripts\tablesorter-master\docs\css\magnific-popup.css" />
+    <Content Include="Scripts\tablesorter-master\docs\css\menu.css" />
+    <Content Include="Scripts\tablesorter-master\docs\css\prettify.css" />
+    <Content Include="Scripts\tablesorter-master\docs\css\rangeslider.css" />
+    <Content Include="Scripts\tablesorter-master\docs\css\select2-3.4.6.min.css" />
+    <Content Include="Scripts\tablesorter-master\docs\css\select2-spinner.gif" />
+    <Content Include="Scripts\tablesorter-master\docs\css\select2.png" />
+    <Content Include="Scripts\tablesorter-master\docs\css\select2x2.png" />
+    <Content Include="Scripts\tablesorter-master\docs\css\tipsy.css" />
+    <Content Include="Scripts\tablesorter-master\docs\example-add-rows.html" />
+    <Content Include="Scripts\tablesorter-master\docs\example-ajax.html" />
+    <Content Include="Scripts\tablesorter-master\docs\example-apply-widget.html" />
+    <Content Include="Scripts\tablesorter-master\docs\example-child-rows-filtered.html" />
+    <Content Include="Scripts\tablesorter-master\docs\example-child-rows.html" />
+    <Content Include="Scripts\tablesorter-master\docs\example-css-highlighting.html" />
+    <Content Include="Scripts\tablesorter-master\docs\example-dragtable.html" />
+    <Content Include="Scripts\tablesorter-master\docs\example-empty-table.html" />
+    <Content Include="Scripts\tablesorter-master\docs\example-extending-defaults.html" />
+    <Content Include="Scripts\tablesorter-master\docs\example-extractors-parsers.html" />
+    <Content Include="Scripts\tablesorter-master\docs\example-header-column-span.html" />
+    <Content Include="Scripts\tablesorter-master\docs\example-locale-sort.html" />
+    <Content Include="Scripts\tablesorter-master\docs\example-meta-headers.html" />
+    <Content Include="Scripts\tablesorter-master\docs\example-meta-parsers.html" />
+    <Content Include="Scripts\tablesorter-master\docs\example-meta-sort-list.html" />
+    <Content Include="Scripts\tablesorter-master\docs\example-method-sortreset.html" />
+    <Content Include="Scripts\tablesorter-master\docs\example-multiple-tbodies.html" />
+    <Content Include="Scripts\tablesorter-master\docs\example-option-custom-sort.html" />
+    <Content Include="Scripts\tablesorter-master\docs\example-option-date-format.html" />
+    <Content Include="Scripts\tablesorter-master\docs\example-option-debug.html" />
+    <Content Include="Scripts\tablesorter-master\docs\example-option-delay-init.html" />
+    <Content Include="Scripts\tablesorter-master\docs\example-option-digits.html" />
+    <Content Include="Scripts\tablesorter-master\docs\example-option-render-header.html" />
+    <Content Include="Scripts\tablesorter-master\docs\example-option-render-template.html" />
+    <Content Include="Scripts\tablesorter-master\docs\example-option-selectorsort.html" />
+    <Content Include="Scripts\tablesorter-master\docs\example-option-show-processing.html" />
+    <Content Include="Scripts\tablesorter-master\docs\example-option-sort-append.html" />
+    <Content Include="Scripts\tablesorter-master\docs\example-option-sort-empty.html" />
+    <Content Include="Scripts\tablesorter-master\docs\example-option-sort-force.html" />
+    <Content Include="Scripts\tablesorter-master\docs\example-option-sort-key.html" />
+    <Content Include="Scripts\tablesorter-master\docs\example-option-sort-list.html" />
+    <Content Include="Scripts\tablesorter-master\docs\example-option-sort-order.html" />
+    <Content Include="Scripts\tablesorter-master\docs\example-option-sortreset-sortrestart.html" />
+    <Content Include="Scripts\tablesorter-master\docs\example-option-text-extraction.html" />
+    <Content Include="Scripts\tablesorter-master\docs\example-option-textsorter-semver.html" />
+    <Content Include="Scripts\tablesorter-master\docs\example-option-theme-metro-style.html" />
+    <Content Include="Scripts\tablesorter-master\docs\example-options-headers-digits-strings.html" />
+    <Content Include="Scripts\tablesorter-master\docs\example-options-headers-locked.html" />
+    <Content Include="Scripts\tablesorter-master\docs\example-options-headers-order.html" />
+    <Content Include="Scripts\tablesorter-master\docs\example-options-headers-parser.html" />
+    <Content Include="Scripts\tablesorter-master\docs\example-options-headers.html" />
+    <Content Include="Scripts\tablesorter-master\docs\example-pager-ajax.html" />
+    <Content Include="Scripts\tablesorter-master\docs\example-pager-filtered.html" />
+    <Content Include="Scripts\tablesorter-master\docs\example-pager.html" />
+    <Content Include="Scripts\tablesorter-master\docs\example-parsers-advanced.html" />
+    <Content Include="Scripts\tablesorter-master\docs\example-parsers-class-name.html" />
+    <Content Include="Scripts\tablesorter-master\docs\example-parsers-date-range.html" />
+    <Content Include="Scripts\tablesorter-master\docs\example-parsers-dates.html" />
+    <Content Include="Scripts\tablesorter-master\docs\example-parsers-duration.html" />
+    <Content Include="Scripts\tablesorter-master\docs\example-parsers-feet-inch-fraction.html" />
+    <Content Include="Scripts\tablesorter-master\docs\example-parsers-file-type.html" />
+    <Content Include="Scripts\tablesorter-master\docs\example-parsers-ignore-articles.html" />
+    <Content Include="Scripts\tablesorter-master\docs\example-parsers-ip-address.html" />
+    <Content Include="Scripts\tablesorter-master\docs\example-parsers-jquery-data.html" />
+    <Content Include="Scripts\tablesorter-master\docs\example-parsers-metric.html" />
+    <Content Include="Scripts\tablesorter-master\docs\example-parsers-named-numbers.html" />
+    <Content Include="Scripts\tablesorter-master\docs\example-parsers-roman.html" />
+    <Content Include="Scripts\tablesorter-master\docs\example-parsers.html" />
+    <Content Include="Scripts\tablesorter-master\docs\example-trigger-sort.html" />
+    <Content Include="Scripts\tablesorter-master\docs\example-triggers.html" />
+    <Content Include="Scripts\tablesorter-master\docs\example-update-all.html" />
+    <Content Include="Scripts\tablesorter-master\docs\example-update-cell.html" />
+    <Content Include="Scripts\tablesorter-master\docs\example-widget-align-character.html" />
+    <Content Include="Scripts\tablesorter-master\docs\example-widget-bootstrap-theme-v2.html" />
+    <Content Include="Scripts\tablesorter-master\docs\example-widget-bootstrap-theme.html" />
+    <Content Include="Scripts\tablesorter-master\docs\example-widget-build-table.html" />
+    <Content Include="Scripts\tablesorter-master\docs\example-widget-chart.html" />
+    <Content Include="Scripts\tablesorter-master\docs\example-widget-column-selector.html" />
+    <Content Include="Scripts\tablesorter-master\docs\example-widget-columns.html" />
+    <Content Include="Scripts\tablesorter-master\docs\example-widget-css-sticky-header.html" />
+    <Content Include="Scripts\tablesorter-master\docs\example-widget-editable.html" />
+    <Content Include="Scripts\tablesorter-master\docs\example-widget-filter-any-match.html" />
+    <Content Include="Scripts\tablesorter-master\docs\example-widget-filter-custom-search.html" />
+    <Content Include="Scripts\tablesorter-master\docs\example-widget-filter-custom-search2.html" />
+    <Content Include="Scripts\tablesorter-master\docs\example-widget-filter-custom.html" />
+    <Content Include="Scripts\tablesorter-master\docs\example-widget-filter-external-inputs.html" />
+    <Content Include="Scripts\tablesorter-master\docs\example-widget-filter-formatter-1.html" />
+    <Content Include="Scripts\tablesorter-master\docs\example-widget-filter-formatter-2.html" />
+    <Content Include="Scripts\tablesorter-master\docs\example-widget-filter-formatter-select2.html" />
+    <Content Include="Scripts\tablesorter-master\docs\example-widget-filter.html" />
+    <Content Include="Scripts\tablesorter-master\docs\example-widget-formatter.html" />
+    <Content Include="Scripts\tablesorter-master\docs\example-widget-grouping-filter-childrows.html" />
+    <Content Include="Scripts\tablesorter-master\docs\example-widget-grouping.html" />
+    <Content Include="Scripts\tablesorter-master\docs\example-widget-header-titles.html" />
+    <Content Include="Scripts\tablesorter-master\docs\example-widget-math.html" />
+    <Content Include="Scripts\tablesorter-master\docs\example-widget-output.html" />
+    <Content Include="Scripts\tablesorter-master\docs\example-widget-pager-ajax.html" />
+    <Content Include="Scripts\tablesorter-master\docs\example-widget-pager.html" />
+    <Content Include="Scripts\tablesorter-master\docs\example-widget-print.html" />
+    <Content Include="Scripts\tablesorter-master\docs\example-widget-reflow.html" />
+    <Content Include="Scripts\tablesorter-master\docs\example-widget-reflow1.html" />
+    <Content Include="Scripts\tablesorter-master\docs\example-widget-reflow2.html" />
+    <Content Include="Scripts\tablesorter-master\docs\example-widget-reflow3.html" />
+    <Content Include="Scripts\tablesorter-master\docs\example-widget-resizable.html" />
+    <Content Include="Scripts\tablesorter-master\docs\example-widget-savesort.html" />
+    <Content Include="Scripts\tablesorter-master\docs\example-widget-scroller.html" />
+    <Content Include="Scripts\tablesorter-master\docs\example-widget-sort-tbodies.html" />
+    <Content Include="Scripts\tablesorter-master\docs\example-widget-sort-to-hash.html" />
+    <Content Include="Scripts\tablesorter-master\docs\example-widget-static-row.html" />
+    <Content Include="Scripts\tablesorter-master\docs\example-widget-sticky-header.html" />
+    <Content Include="Scripts\tablesorter-master\docs\example-widget-ui-theme.html" />
+    <Content Include="Scripts\tablesorter-master\docs\example-widget-zebra.html" />
+    <Content Include="Scripts\tablesorter-master\docs\example-widgets.html" />
+    <Content Include="Scripts\tablesorter-master\docs\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="Scripts\tablesorter-master\docs\img\external.png" />
+    <Content Include="Scripts\tablesorter-master\docs\img\link.png" />
+    <Content Include="Scripts\tablesorter-master\docs\img\screens-blue.png" />
+    <Content Include="Scripts\tablesorter-master\docs\img\screens.png" />
+    <Content Include="Scripts\tablesorter-master\docs\index.html" />
+    <Content Include="Scripts\tablesorter-master\docs\js\bootstrap.min.js" />
+    <Content Include="Scripts\tablesorter-master\docs\js\chili\jquery.chili-2.2.js" />
+    <Content Include="Scripts\tablesorter-master\docs\js\chili\recipes.js" />
+    <Content Include="Scripts\tablesorter-master\docs\js\demo-build-table.js" />
+    <Content Include="Scripts\tablesorter-master\docs\js\docs.js" />
+    <Content Include="Scripts\tablesorter-master\docs\js\jquery-1.2.6.min.js" />
+    <Content Include="Scripts\tablesorter-master\docs\js\jquery-1.4.4.min.js" />
+    <Content Include="Scripts\tablesorter-master\docs\js\jquery-latest.min.js" />
+    <Content Include="Scripts\tablesorter-master\docs\js\jquery-ui.min.js" />
+    <Content Include="Scripts\tablesorter-master\docs\js\jquery.jui_theme_switch.min.js" />
+    <Content Include="Scripts\tablesorter-master\docs\js\jquery.magnific-popup.min.js" />
+    <Content Include="Scripts\tablesorter-master\docs\js\jquery.tipsy.min.js" />
+    <Content Include="Scripts\tablesorter-master\docs\js\prettify.js" />
+    <Content Include="Scripts\tablesorter-master\docs\js\rangeslider.min.js" />
+    <Content Include="Scripts\tablesorter-master\docs\js\search-ie.js" />
+    <Content Include="Scripts\tablesorter-master\docs\js\search.js" />
+    <Content Include="Scripts\tablesorter-master\docs\js\select2-3.4.6.min.js" />
+    <Content Include="Scripts\tablesorter-master\docs\js\sugar.min.js" />
+    <Content Include="Scripts\tablesorter-master\docs\themes.html" />
+    <Content Include="Scripts\tablesorter-master\Gruntfile.js" />
+    <Content Include="Scripts\tablesorter-master\index.html" />
+    <Content Include="Scripts\tablesorter-master\js\extras\jquery.dragtable.mod.js" />
+    <Content Include="Scripts\tablesorter-master\js\extras\jquery.metadata.js" />
+    <Content Include="Scripts\tablesorter-master\js\extras\semver-mod.js" />
+    <Content Include="Scripts\tablesorter-master\js\extras\semver.js" />
+    <Content Include="Scripts\tablesorter-master\js\jquery.tablesorter.combined.js" />
+    <Content Include="Scripts\tablesorter-master\js\jquery.tablesorter.js" />
+    <Content Include="Scripts\tablesorter-master\js\jquery.tablesorter.widgets.js" />
+    <Content Include="Scripts\tablesorter-master\js\parsers\parser-date-extract.js" />
+    <Content Include="Scripts\tablesorter-master\js\parsers\parser-date-iso8601.js" />
+    <Content Include="Scripts\tablesorter-master\js\parsers\parser-date-month.js" />
+    <Content Include="Scripts\tablesorter-master\js\parsers\parser-date-range.js" />
+    <Content Include="Scripts\tablesorter-master\js\parsers\parser-date-two-digit-year.js" />
+    <Content Include="Scripts\tablesorter-master\js\parsers\parser-date-weekday.js" />
+    <Content Include="Scripts\tablesorter-master\js\parsers\parser-date.js" />
+    <Content Include="Scripts\tablesorter-master\js\parsers\parser-duration.js" />
+    <Content Include="Scripts\tablesorter-master\js\parsers\parser-feet-inch-fraction.js" />
+    <Content Include="Scripts\tablesorter-master\js\parsers\parser-file-type.js" />
+    <Content Include="Scripts\tablesorter-master\js\parsers\parser-globalize.js" />
+    <Content Include="Scripts\tablesorter-master\js\parsers\parser-ignore-articles.js" />
+    <Content Include="Scripts\tablesorter-master\js\parsers\parser-image.js" />
+    <Content Include="Scripts\tablesorter-master\js\parsers\parser-input-select.js" />
+    <Content Include="Scripts\tablesorter-master\js\parsers\parser-metric.js" />
+    <Content Include="Scripts\tablesorter-master\js\parsers\parser-named-numbers.js" />
+    <Content Include="Scripts\tablesorter-master\js\parsers\parser-network.js" />
+    <Content Include="Scripts\tablesorter-master\js\parsers\parser-roman.js" />
+    <Content Include="Scripts\tablesorter-master\js\widgets\widget-alignChar.js" />
+    <Content Include="Scripts\tablesorter-master\js\widgets\widget-build-table.js" />
+    <Content Include="Scripts\tablesorter-master\js\widgets\widget-chart.js" />
+    <Content Include="Scripts\tablesorter-master\js\widgets\widget-columns.js" />
+    <Content Include="Scripts\tablesorter-master\js\widgets\widget-columnSelector.js" />
+    <Content Include="Scripts\tablesorter-master\js\widgets\widget-cssStickyHeaders.js" />
+    <Content Include="Scripts\tablesorter-master\js\widgets\widget-editable.js" />
+    <Content Include="Scripts\tablesorter-master\js\widgets\widget-filter-formatter-html5.js" />
+    <Content Include="Scripts\tablesorter-master\js\widgets\widget-filter-formatter-jui.js" />
+    <Content Include="Scripts\tablesorter-master\js\widgets\widget-filter-formatter-select2.js" />
+    <Content Include="Scripts\tablesorter-master\js\widgets\widget-filter-type-insideRange.js" />
+    <Content Include="Scripts\tablesorter-master\js\widgets\widget-filter.js" />
+    <Content Include="Scripts\tablesorter-master\js\widgets\widget-formatter.js" />
+    <Content Include="Scripts\tablesorter-master\js\widgets\widget-grouping.js" />
+    <Content Include="Scripts\tablesorter-master\js\widgets\widget-headerTitles.js" />
+    <Content Include="Scripts\tablesorter-master\js\widgets\widget-math.js" />
+    <Content Include="Scripts\tablesorter-master\js\widgets\widget-output.js" />
+    <Content Include="Scripts\tablesorter-master\js\widgets\widget-pager.js" />
+    <Content Include="Scripts\tablesorter-master\js\widgets\widget-print.js" />
+    <Content Include="Scripts\tablesorter-master\js\widgets\widget-reflow.js" />
+    <Content Include="Scripts\tablesorter-master\js\widgets\widget-repeatheaders.js" />
+    <Content Include="Scripts\tablesorter-master\js\widgets\widget-resizable.js" />
+    <Content Include="Scripts\tablesorter-master\js\widgets\widget-saveSort.js" />
+    <Content Include="Scripts\tablesorter-master\js\widgets\widget-scroller.js" />
+    <Content Include="Scripts\tablesorter-master\js\widgets\widget-sort2Hash.js" />
+    <Content Include="Scripts\tablesorter-master\js\widgets\widget-sortTbodies.js" />
+    <Content Include="Scripts\tablesorter-master\js\widgets\widget-staticRow.js" />
+    <Content Include="Scripts\tablesorter-master\js\widgets\widget-stickyHeaders.js" />
+    <Content Include="Scripts\tablesorter-master\js\widgets\widget-storage.js" />
+    <Content Include="Scripts\tablesorter-master\js\widgets\widget-uitheme.js" />
+    <Content Include="Scripts\tablesorter-master\test.html" />
+    <Content Include="Scripts\tablesorter-master\testing\qunit-1.18.0.css" />
+    <Content Include="Scripts\tablesorter-master\testing\qunit-1.18.0.js" />
+    <Content Include="Scripts\tablesorter-master\testing\testing-ipv6.js" />
+    <Content Include="Scripts\tablesorter-master\testing\testing-widgets.js" />
+    <Content Include="Scripts\tablesorter-master\testing\testing.css" />
+    <Content Include="Scripts\tablesorter-master\testing\testing.js" />
+    <Content Include="Scripts\tests\assets\ajax-content.html" />
+    <Content Include="Scripts\tests\cell.metadata.html" />
+    <Content Include="Scripts\tests\checkbox.html" />
+    <Content Include="Scripts\tests\colspan.html" />
+    <Content Include="Scripts\tests\demo.html" />
+    <Content Include="Scripts\tests\index.html" />
+    <Content Include="Scripts\tests\large.html" />
+    <Content Include="Scripts\tests\lockedOrder.html" />
+    <Content Include="Scripts\tests\metadata.html" />
+    <Content Include="Scripts\tests\multiple-headers.html" />
+    <Content Include="Scripts\tests\pager.html" />
+    <Content Include="Scripts\themes\blue\asc.gif" />
+    <Content Include="Scripts\themes\blue\bg.gif" />
+    <Content Include="Scripts\themes\blue\desc.gif" />
+    <Content Include="Scripts\themes\blue\style.css" />
+    <Content Include="Scripts\themes\green\asc.png" />
+    <Content Include="Scripts\themes\green\bg.png" />
+    <Content Include="Scripts\themes\green\desc.png" />
+    <Content Include="Scripts\themes\green\style.css" />
+    <Content Include="Views\Results\Index.cshtml" />
+    <Content Include="Views\Results\AllResults.cshtml" />
+    <Content Include="Scripts\addons\.svn\all-wcprops" />
+    <Content Include="Scripts\addons\.svn\entries" />
+    <Content Include="Scripts\addons\pager\.svn\all-wcprops" />
+    <Content Include="Scripts\addons\pager\.svn\entries" />
+    <Content Include="Scripts\addons\pager\.svn\prop-base\jquery.tablesorter.pager.css.svn-base" />
+    <Content Include="Scripts\addons\pager\.svn\prop-base\jquery.tablesorter.pager.js.svn-base" />
+    <Content Include="Scripts\addons\pager\.svn\text-base\jquery.tablesorter.pager.css.svn-base" />
+    <Content Include="Scripts\addons\pager\.svn\text-base\jquery.tablesorter.pager.js.svn-base" />
+    <Content Include="Scripts\build\.svn\all-wcprops" />
+    <Content Include="Scripts\build\.svn\entries" />
+    <Content Include="Scripts\build\.svn\prop-base\js.jar.svn-base" />
+    <Content Include="Scripts\build\.svn\prop-base\jsmin.js.svn-base" />
+    <Content Include="Scripts\build\.svn\prop-base\min.js.svn-base" />
+    <Content Include="Scripts\build\.svn\prop-base\pack.js.svn-base" />
+    <Content Include="Scripts\build\.svn\prop-base\packer.js.svn-base" />
+    <Content Include="Scripts\build\.svn\prop-base\ParseMaster.js.svn-base" />
+    <Content Include="Scripts\build\.svn\prop-base\writeFile.js.svn-base" />
+    <Content Include="Scripts\build\.svn\text-base\js.jar.svn-base" />
+    <Content Include="Scripts\build\.svn\text-base\jsmin.js.svn-base" />
+    <Content Include="Scripts\build\.svn\text-base\min.js.svn-base" />
+    <Content Include="Scripts\build\.svn\text-base\pack.js.svn-base" />
+    <Content Include="Scripts\build\.svn\text-base\packer.js.svn-base" />
+    <Content Include="Scripts\build\.svn\text-base\ParseMaster.js.svn-base" />
+    <Content Include="Scripts\build\.svn\text-base\writeFile.js.svn-base" />
+    <Content Include="Scripts\docs\.svn\all-wcprops" />
+    <Content Include="Scripts\docs\.svn\entries" />
+    <Content Include="Scripts\docs\.svn\prop-base\example-ajax.html.svn-base" />
+    <Content Include="Scripts\docs\.svn\prop-base\example-empty-table.html.svn-base" />
+    <Content Include="Scripts\docs\.svn\prop-base\example-extending-defaults.html.svn-base" />
+    <Content Include="Scripts\docs\.svn\prop-base\example-meta-headers.html.svn-base" />
+    <Content Include="Scripts\docs\.svn\prop-base\example-meta-parsers.html.svn-base" />
+    <Content Include="Scripts\docs\.svn\prop-base\example-meta-sort-list.html.svn-base" />
+    <Content Include="Scripts\docs\.svn\prop-base\example-option-debug.html.svn-base" />
+    <Content Include="Scripts\docs\.svn\prop-base\example-option-digits.html.svn-base" />
+    <Content Include="Scripts\docs\.svn\prop-base\example-option-sort-force.html.svn-base" />
+    <Content Include="Scripts\docs\.svn\prop-base\example-option-sort-key.html.svn-base" />
+    <Content Include="Scripts\docs\.svn\prop-base\example-option-sort-list.html.svn-base" />
+    <Content Include="Scripts\docs\.svn\prop-base\example-option-sort-order.html.svn-base" />
+    <Content Include="Scripts\docs\.svn\prop-base\example-option-text-extraction.html.svn-base" />
+    <Content Include="Scripts\docs\.svn\prop-base\example-options-headers.html.svn-base" />
+    <Content Include="Scripts\docs\.svn\prop-base\example-pager.html.svn-base" />
+    <Content Include="Scripts\docs\.svn\prop-base\example-parsers.html.svn-base" />
+    <Content Include="Scripts\docs\.svn\prop-base\example-trigger-sort.html.svn-base" />
+    <Content Include="Scripts\docs\.svn\prop-base\example-triggers.html.svn-base" />
+    <Content Include="Scripts\docs\.svn\prop-base\example-update-cell.html.svn-base" />
+    <Content Include="Scripts\docs\.svn\prop-base\example-widgets.html.svn-base" />
+    <Content Include="Scripts\docs\.svn\prop-base\index.html.svn-base" />
+    <Content Include="Scripts\docs\.svn\text-base\example-ajax.html.svn-base" />
+    <Content Include="Scripts\docs\.svn\text-base\example-empty-table.html.svn-base" />
+    <Content Include="Scripts\docs\.svn\text-base\example-extending-defaults.html.svn-base" />
+    <Content Include="Scripts\docs\.svn\text-base\example-meta-headers.html.svn-base" />
+    <Content Include="Scripts\docs\.svn\text-base\example-meta-parsers.html.svn-base" />
+    <Content Include="Scripts\docs\.svn\text-base\example-meta-sort-list.html.svn-base" />
+    <Content Include="Scripts\docs\.svn\text-base\example-option-debug.html.svn-base" />
+    <Content Include="Scripts\docs\.svn\text-base\example-option-digits.html.svn-base" />
+    <Content Include="Scripts\docs\.svn\text-base\example-option-sort-force.html.svn-base" />
+    <Content Include="Scripts\docs\.svn\text-base\example-option-sort-key.html.svn-base" />
+    <Content Include="Scripts\docs\.svn\text-base\example-option-sort-list.html.svn-base" />
+    <Content Include="Scripts\docs\.svn\text-base\example-option-sort-order.html.svn-base" />
+    <Content Include="Scripts\docs\.svn\text-base\example-option-text-extraction.html.svn-base" />
+    <Content Include="Scripts\docs\.svn\text-base\example-options-headers.html.svn-base" />
+    <Content Include="Scripts\docs\.svn\text-base\example-pager.html.svn-base" />
+    <Content Include="Scripts\docs\.svn\text-base\example-parsers.html.svn-base" />
+    <Content Include="Scripts\docs\.svn\text-base\example-trigger-sort.html.svn-base" />
+    <Content Include="Scripts\docs\.svn\text-base\example-triggers.html.svn-base" />
+    <Content Include="Scripts\docs\.svn\text-base\example-update-cell.html.svn-base" />
+    <Content Include="Scripts\docs\.svn\text-base\example-widgets.html.svn-base" />
+    <Content Include="Scripts\docs\.svn\text-base\index.html.svn-base" />
+    <Content Include="Scripts\docs\.tmp_index.html.55071~" />
+    <Content Include="Scripts\docs\assets\.svn\all-wcprops" />
+    <Content Include="Scripts\docs\assets\.svn\entries" />
+    <Content Include="Scripts\docs\assets\.svn\prop-base\ajax-content.html.svn-base" />
+    <Content Include="Scripts\docs\assets\.svn\text-base\ajax-content.html.svn-base" />
+    <Content Include="Scripts\docs\css\.svn\all-wcprops" />
+    <Content Include="Scripts\docs\css\.svn\entries" />
+    <Content Include="Scripts\docs\css\.svn\prop-base\jq.css.svn-base" />
+    <Content Include="Scripts\docs\css\.svn\text-base\jq.css.svn-base" />
+    <Content Include="Scripts\docs\img\.svn\all-wcprops" />
+    <Content Include="Scripts\docs\img\.svn\entries" />
+    <Content Include="Scripts\docs\img\.svn\prop-base\external.png.svn-base" />
+    <Content Include="Scripts\docs\img\.svn\text-base\external.png.svn-base" />
+    <Content Include="Scripts\docs\js\.svn\all-wcprops" />
+    <Content Include="Scripts\docs\js\.svn\entries" />
+    <Content Include="Scripts\docs\js\.svn\prop-base\docs.js.svn-base" />
+    <Content Include="Scripts\docs\js\.svn\prop-base\examples.js.svn-base" />
+    <Content Include="Scripts\docs\js\.svn\text-base\docs.js.svn-base" />
+    <Content Include="Scripts\docs\js\.svn\text-base\examples.js.svn-base" />
+    <Content Include="Scripts\tests\.svn\all-wcprops" />
+    <Content Include="Scripts\tests\.svn\entries" />
+    <Content Include="Scripts\tests\.svn\prop-base\cell.metadata.html.svn-base" />
+    <Content Include="Scripts\tests\.svn\prop-base\checkbox.html.svn-base" />
+    <Content Include="Scripts\tests\.svn\prop-base\colspan.html.svn-base" />
+    <Content Include="Scripts\tests\.svn\prop-base\demo.html.svn-base" />
+    <Content Include="Scripts\tests\.svn\prop-base\index.html.svn-base" />
+    <Content Include="Scripts\tests\.svn\prop-base\large.html.svn-base" />
+    <Content Include="Scripts\tests\.svn\prop-base\lockedOrder.html.svn-base" />
+    <Content Include="Scripts\tests\.svn\prop-base\metadata.html.svn-base" />
+    <Content Include="Scripts\tests\.svn\prop-base\multiple-headers.html.svn-base" />
+    <Content Include="Scripts\tests\.svn\prop-base\pager.html.svn-base" />
+    <Content Include="Scripts\tests\.svn\text-base\cell.metadata.html.svn-base" />
+    <Content Include="Scripts\tests\.svn\text-base\checkbox.html.svn-base" />
+    <Content Include="Scripts\tests\.svn\text-base\colspan.html.svn-base" />
+    <Content Include="Scripts\tests\.svn\text-base\demo.html.svn-base" />
+    <Content Include="Scripts\tests\.svn\text-base\index.html.svn-base" />
+    <Content Include="Scripts\tests\.svn\text-base\large.html.svn-base" />
+    <Content Include="Scripts\tests\.svn\text-base\lockedOrder.html.svn-base" />
+    <Content Include="Scripts\tests\.svn\text-base\metadata.html.svn-base" />
+    <Content Include="Scripts\tests\.svn\text-base\multiple-headers.html.svn-base" />
+    <Content Include="Scripts\tests\.svn\text-base\pager.html.svn-base" />
+    <Content Include="Scripts\tests\assets\.svn\all-wcprops" />
+    <Content Include="Scripts\tests\assets\.svn\entries" />
+    <Content Include="Scripts\tests\assets\.svn\prop-base\ajax-content.html.svn-base" />
+    <Content Include="Scripts\tests\assets\.svn\text-base\ajax-content.html.svn-base" />
+    <Content Include="Scripts\themes\.svn\all-wcprops" />
+    <Content Include="Scripts\themes\.svn\entries" />
+    <Content Include="Scripts\themes\blue\.svn\all-wcprops" />
+    <Content Include="Scripts\themes\blue\.svn\entries" />
+    <Content Include="Scripts\themes\blue\.svn\prop-base\asc.gif.svn-base" />
+    <Content Include="Scripts\themes\blue\.svn\prop-base\bg.gif.svn-base" />
+    <Content Include="Scripts\themes\blue\.svn\prop-base\blue.zip.svn-base" />
+    <Content Include="Scripts\themes\blue\.svn\prop-base\desc.gif.svn-base" />
+    <Content Include="Scripts\themes\blue\.svn\prop-base\style.css.svn-base" />
+    <Content Include="Scripts\themes\blue\.svn\text-base\asc.gif.svn-base" />
+    <Content Include="Scripts\themes\blue\.svn\text-base\bg.gif.svn-base" />
+    <Content Include="Scripts\themes\blue\.svn\text-base\blue.zip.svn-base" />
+    <Content Include="Scripts\themes\blue\.svn\text-base\desc.gif.svn-base" />
+    <Content Include="Scripts\themes\blue\.svn\text-base\style.css.svn-base" />
+    <Content Include="Scripts\themes\blue\blue.zip" />
+    <Content Include="Scripts\themes\green\.svn\all-wcprops" />
+    <Content Include="Scripts\themes\green\.svn\entries" />
+    <Content Include="Scripts\themes\green\.svn\prop-base\asc.png.svn-base" />
+    <Content Include="Scripts\themes\green\.svn\prop-base\bg.png.svn-base" />
+    <Content Include="Scripts\themes\green\.svn\prop-base\desc.png.svn-base" />
+    <Content Include="Scripts\themes\green\.svn\prop-base\green.zip.svn-base" />
+    <Content Include="Scripts\themes\green\.svn\prop-base\style.css.svn-base" />
+    <Content Include="Scripts\themes\green\.svn\text-base\asc.png.svn-base" />
+    <Content Include="Scripts\themes\green\.svn\text-base\bg.png.svn-base" />
+    <Content Include="Scripts\themes\green\.svn\text-base\desc.png.svn-base" />
+    <Content Include="Scripts\themes\green\.svn\text-base\green.zip.svn-base" />
+    <Content Include="Scripts\themes\green\.svn\text-base\style.css.svn-base" />
+    <Content Include="Scripts\themes\green\green.zip" />
+    <Content Include="Scripts\changelog" />
+    <Content Include="Scripts\tablesorter-master\.gitattributes" />
+    <Content Include="Scripts\tablesorter-master\.gitignore" />
+    <Content Include="Scripts\tablesorter-master\.jscsrc" />
+    <Content Include="Scripts\tablesorter-master\bower.json" />
+    <Content Include="Scripts\tablesorter-master\CONTRIBUTING.md" />
+    <Content Include="Scripts\tablesorter-master\css\bootstrap.less" />
+    <Content Include="Scripts\tablesorter-master\css\metro.less" />
+    <Content Include="Scripts\tablesorter-master\css\psd\green-asc.psd" />
+    <Content Include="Scripts\tablesorter-master\css\psd\green-desc.psd" />
+    <Content Include="Scripts\tablesorter-master\css\psd\green-unsorted.psd" />
+    <Content Include="Scripts\tablesorter-master\css\psd\metro-style.psd" />
+    <Content Include="Scripts\tablesorter-master\css\theme.less" />
+    <Content Include="Scripts\tablesorter-master\dist\css\less\bootstrap.less" />
+    <Content Include="Scripts\tablesorter-master\dist\css\less\metro.less" />
+    <Content Include="Scripts\tablesorter-master\dist\css\less\theme.less" />
+    <Content Include="Scripts\tablesorter-master\docs\assets\build.json" />
+    <Content Include="Scripts\tablesorter-master\docs\assets\City0.json" />
+    <Content Include="Scripts\tablesorter-master\docs\assets\City1.json" />
+    <Content Include="Scripts\tablesorter-master\docs\assets\City2.json" />
+    <Content Include="Scripts\tablesorter-master\docs\assets\City3.json" />
+    <Content Include="Scripts\tablesorter-master\docs\assets\theme_switcher.json" />
+    <Content Include="Scripts\tablesorter-master\docs\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="Scripts\tablesorter-master\docs\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="Scripts\tablesorter-master\docs\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="Scripts\tablesorter-master\docs\fonts\glyphicons-halflings-regular.woff2" />
+    <Content Include="Scripts\tablesorter-master\example.json" />
+    <Content Include="Scripts\tablesorter-master\package.json" />
+    <Content Include="Scripts\tablesorter-master\README.md" />
+    <Content Include="Scripts\tablesorter-master\tablesorter.jquery.json" />
+    <None Include="_bin_deployableAssemblies\x86\sqlcese40.dll" />
+    <None Include="_bin_deployableAssemblies\x86\sqlceqp40.dll" />
+    <None Include="_bin_deployableAssemblies\x86\sqlceme40.dll" />
+    <None Include="_bin_deployableAssemblies\x86\sqlceer40EN.dll" />
+    <None Include="_bin_deployableAssemblies\x86\sqlcecompact40.dll" />
+    <None Include="_bin_deployableAssemblies\x86\sqlceca40.dll" />
+    <None Include="_bin_deployableAssemblies\x86\Microsoft.VC90.CRT\README_ENU.txt" />
+    <None Include="_bin_deployableAssemblies\x86\Microsoft.VC90.CRT\msvcr90.dll" />
+    <None Include="_bin_deployableAssemblies\amd64\sqlcese40.dll" />
+    <None Include="_bin_deployableAssemblies\amd64\sqlceqp40.dll" />
+    <None Include="_bin_deployableAssemblies\amd64\sqlceme40.dll" />
+    <None Include="_bin_deployableAssemblies\amd64\sqlceer40EN.dll" />
+    <None Include="_bin_deployableAssemblies\amd64\sqlcecompact40.dll" />
+    <None Include="_bin_deployableAssemblies\amd64\sqlceca40.dll" />
+    <None Include="_bin_deployableAssemblies\amd64\Microsoft.VC90.CRT\README_ENU.txt" />
+    <None Include="_bin_deployableAssemblies\amd64\Microsoft.VC90.CRT\msvcr90.dll" />
+    <None Include="Scripts\jquery-1.10.2.intellisense.js" />
+    <Content Include="Scripts\jquery-1.10.2.js" />
+    <Content Include="Scripts\jquery-1.10.2.min.js" />
+    <None Include="Scripts\jquery.validate-vsdoc.js" />
+    <Content Include="Scripts\jquery.validate.js" />
+    <Content Include="Scripts\jquery.validate.min.js" />
+    <Content Include="Scripts\jquery.validate.unobtrusive.js" />
+    <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
+    <Content Include="Scripts\modernizr-2.6.2.js" />
+    <Content Include="Scripts\respond.js" />
+    <Content Include="Scripts\respond.min.js" />
+    <Content Include="Scripts\_references.js" />
+    <Content Include="Web.config" />
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Views\Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Views\_ViewStart.cshtml" />
+    <Content Include="Views\Shared\Error.cshtml" />
+    <Content Include="Views\Shared\_Layout.cshtml" />
+    <Content Include="Views\Home\About.cshtml" />
+    <Content Include="Views\Home\Contact.cshtml" />
+    <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Scripts\jquery-1.10.2.min.map" />
+    <Content Include="Views\SuperRugbyTable\Index.cshtml" />
+    <None Include="_bin_deployableAssemblies\amd64\Microsoft.VC90.CRT\Microsoft.VC90.CRT.manifest" />
+    <None Include="_bin_deployableAssemblies\x86\Microsoft.VC90.CRT\Microsoft.VC90.CRT.manifest" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+    <Folder Include="Scripts\addons\.svn\prop-base\" />
+    <Folder Include="Scripts\addons\.svn\props\" />
+    <Folder Include="Scripts\addons\.svn\text-base\" />
+    <Folder Include="Scripts\addons\.svn\tmp\prop-base\" />
+    <Folder Include="Scripts\addons\.svn\tmp\props\" />
+    <Folder Include="Scripts\addons\.svn\tmp\text-base\" />
+    <Folder Include="Scripts\addons\pager\.svn\props\" />
+    <Folder Include="Scripts\addons\pager\.svn\tmp\prop-base\" />
+    <Folder Include="Scripts\addons\pager\.svn\tmp\props\" />
+    <Folder Include="Scripts\addons\pager\.svn\tmp\text-base\" />
+    <Folder Include="Scripts\build\.svn\props\" />
+    <Folder Include="Scripts\build\.svn\tmp\prop-base\" />
+    <Folder Include="Scripts\build\.svn\tmp\props\" />
+    <Folder Include="Scripts\build\.svn\tmp\text-base\" />
+    <Folder Include="Scripts\docs\.svn\props\" />
+    <Folder Include="Scripts\docs\.svn\tmp\prop-base\" />
+    <Folder Include="Scripts\docs\.svn\tmp\props\" />
+    <Folder Include="Scripts\docs\.svn\tmp\text-base\" />
+    <Folder Include="Scripts\docs\assets\.svn\props\" />
+    <Folder Include="Scripts\docs\assets\.svn\tmp\prop-base\" />
+    <Folder Include="Scripts\docs\assets\.svn\tmp\props\" />
+    <Folder Include="Scripts\docs\assets\.svn\tmp\text-base\" />
+    <Folder Include="Scripts\docs\css\.svn\props\" />
+    <Folder Include="Scripts\docs\css\.svn\tmp\prop-base\" />
+    <Folder Include="Scripts\docs\css\.svn\tmp\props\" />
+    <Folder Include="Scripts\docs\css\.svn\tmp\text-base\" />
+    <Folder Include="Scripts\docs\img\.svn\props\" />
+    <Folder Include="Scripts\docs\img\.svn\tmp\prop-base\" />
+    <Folder Include="Scripts\docs\img\.svn\tmp\props\" />
+    <Folder Include="Scripts\docs\img\.svn\tmp\text-base\" />
+    <Folder Include="Scripts\docs\js\.svn\props\" />
+    <Folder Include="Scripts\docs\js\.svn\tmp\prop-base\" />
+    <Folder Include="Scripts\docs\js\.svn\tmp\props\" />
+    <Folder Include="Scripts\docs\js\.svn\tmp\text-base\" />
+    <Folder Include="Scripts\tests\.svn\props\" />
+    <Folder Include="Scripts\tests\.svn\tmp\prop-base\" />
+    <Folder Include="Scripts\tests\.svn\tmp\props\" />
+    <Folder Include="Scripts\tests\.svn\tmp\text-base\" />
+    <Folder Include="Scripts\tests\assets\.svn\props\" />
+    <Folder Include="Scripts\tests\assets\.svn\tmp\prop-base\" />
+    <Folder Include="Scripts\tests\assets\.svn\tmp\props\" />
+    <Folder Include="Scripts\tests\assets\.svn\tmp\text-base\" />
+    <Folder Include="Scripts\themes\.svn\prop-base\" />
+    <Folder Include="Scripts\themes\.svn\props\" />
+    <Folder Include="Scripts\themes\.svn\text-base\" />
+    <Folder Include="Scripts\themes\.svn\tmp\prop-base\" />
+    <Folder Include="Scripts\themes\.svn\tmp\props\" />
+    <Folder Include="Scripts\themes\.svn\tmp\text-base\" />
+    <Folder Include="Scripts\themes\blue\.svn\props\" />
+    <Folder Include="Scripts\themes\blue\.svn\tmp\prop-base\" />
+    <Folder Include="Scripts\themes\blue\.svn\tmp\props\" />
+    <Folder Include="Scripts\themes\blue\.svn\tmp\text-base\" />
+    <Folder Include="Scripts\themes\green\.svn\props\" />
+    <Folder Include="Scripts\themes\green\.svn\tmp\prop-base\" />
+    <Folder Include="Scripts\themes\green\.svn\tmp\props\" />
+    <Folder Include="Scripts\themes\green\.svn\tmp\text-base\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="packages.config" />
+    <None Include="Project_Readme.html" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <Target Name="MvcBuildViews" AfterTargets="AfterBuild" Condition="'$(MvcBuildViews)'=='true'">
+    <AspNetCompiler VirtualPath="temp" PhysicalPath="$(WebProjectOutputDir)" />
+  </Target>
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>56656</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:56656/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target> -->
+</Project>
